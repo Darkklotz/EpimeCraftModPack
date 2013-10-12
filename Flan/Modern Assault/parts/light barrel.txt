@@ -1,0 +1,14 @@
+Name Light Barrel
+ShortName libarrel
+Icon sbarrel
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27240
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 16
+RecipeOutput 1
+Recipe P plastics G glass I iron
+   
+ II
+   

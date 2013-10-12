@@ -1,0 +1,64 @@
+Name UH-60 Blackhawk
+ShortName UH60
+ItemID 4004
+Icon IconUH60
+Model UH60
+Texture UH60
+MaxPropellerSpeed 2
+TakeOffSpeed 1.0
+CameraDistance 16.0
+//0 - Nose propeller, 1 - Inner Wing Propellers, 2 - Outer Wing Propellers, 3 - Inner and Outer Propellers
+PropSetup 2
+//Propeller number, x, y, z. Numbering starts at 0.
+PropellerPos 0 0 -47 0
+PropellerPos 1 145 -45 3
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 5
+BombDelay 100
+CargoSlots 24
+BombSlots 5
+Health 1600
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+AllowWingGuns True
+AllowNoseGuns True
+//Next 3 are for large planes only
+AllowSideGuns False
+AllowTailGuns False
+AllowDorsalGun False
+//Add positions for the pilot controlled guns. That is, nose and wing guns.
+//AddGunPosition <type> <x> <y> <Z> where type is one of the corresponding numbers
+//0 : Left Nose, 1 : Right Nose, 2 : Left Wing, 3 : Right Wing
+AddGunPosition 0 -9 1 25
+AddGunPosition 1 -9 1 25
+BombPosition -9 -16 -52
+TurnLeftSpeed 4
+TurnRightSpeed 4
+RollLeftSpeed 1
+RollRightSpeed 1
+LookUpSpeed 3
+LookDownSpeed 2
+Acceleration 9
+Decceleration 3
+FuelTankSize 7000
+MaxHeight 256
+StartSound helo
+StartSoundLength 20
+PropSound helo
+PropSoundLength 30
+ShootSound gatling
+BombSound bomb
+Pilot 10 10 41
+Passengers 3
+Passenger 0 12 1 -40 0
+Passenger 1 0 1 -40 0
+Passenger 2 -12 1 -40 0
+BigTable True
+//Recipe
+Propeller metalPropeller
+Cockpit metalCockpit
+Wings MetalWingSection
+Bay passengerBay
+Tail metalTail
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Grey

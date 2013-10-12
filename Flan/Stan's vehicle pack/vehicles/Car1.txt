@@ -1,0 +1,52 @@
+Name Large Black Car
+ShortName Car
+ItemID 29200
+Icon IconCar1
+Model Car1
+Texture SkinCar1
+MaxSpeed 5.0
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 999
+ShellDelay 999
+CargoSlots 32
+//Actually shell slots
+BombSlots 0
+Health 300
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns False
+AllowTurretGuns False
+TurnLeftSpeed 2
+TurnRightSpeed 2
+Acceleration 5
+Decceleration 5
+FuelTankSize 1000
+StartSound Engine
+StartSoundLength 20
+EngineSound Engine
+EngineSoundLength 20
+ShootSound bullet
+ShellSound shell
+Driver -8 0 0
+Passengers 3
+Passenger 0 7 -9 0 0
+Passenger 1 -8 -9 17 0
+Passenger 2 7 -9 17 0
+GunYawMin -45
+GunYawMax 45
+GunPitchMin -45
+GunPitchMax 45
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -16 2 -14 //VL
+WheelPosition 1 -16 2 29 //HL
+WheelPosition 2 16 2 29 //HR
+WheelPosition 3 16 2 -14 //VR
+//Recipe
+FrontWheels wheel
+BackWheels wheel
+Tracks None
+Chassis SmallCarChassis
+Turret None
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Black

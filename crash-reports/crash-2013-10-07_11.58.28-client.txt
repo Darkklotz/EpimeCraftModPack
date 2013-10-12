@@ -1,0 +1,103 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 10/7/13 11:58 AM
+Description: Code Chicken Core
+
+codechicken.core.NetworkClosedException
+	at codechicken.core.ClientUtils.getServerIP(ClientUtils.java:87)
+	at codechicken.core.ClientUtils.isLocal(ClientUtils.java:101)
+	at codechicken.nei.ClientPacketHandler.handleSMPCheck(ClientPacketHandler.java:107)
+	at codechicken.nei.ClientPacketHandler.handlePacket(ClientPacketHandler.java:26)
+	at codechicken.core.PacketCustom$ClientPacketHandler.handle(PacketCustom.java:105)
+	at codechicken.core.PacketCustom$CustomPacketHandler.onPacketData(PacketCustom.java:74)
+	at cpw.mods.fml.common.network.NetworkRegistry.handlePacket(NetworkRegistry.java:243)
+	at cpw.mods.fml.common.network.NetworkRegistry.handleCustomPacket(NetworkRegistry.java:233)
+	at cpw.mods.fml.common.network.FMLNetworkHandler.handlePacket250Packet(FMLNetworkHandler.java:71)
+	at ayh.a(NetClientHandler.java:1483)
+	at di.a(SourceFile:59)
+	at cg.b(TcpConnection.java:458)
+	at cpw.mods.fml.client.FMLClientHandler.disconnectIDMismatch(FMLClientHandler.java:527)
+	at cpw.mods.fml.common.FMLCommonHandler.disconnectIDMismatch(FMLCommonHandler.java:464)
+	at cpw.mods.fml.common.network.ModIdMapPacket.execute(ModIdMapPacket.java:89)
+	at cpw.mods.fml.common.network.FMLNetworkHandler.handleFMLPacket(FMLNetworkHandler.java:102)
+	at cpw.mods.fml.common.network.FMLNetworkHandler.handlePacket250Packet(FMLNetworkHandler.java:67)
+	at ayh.a(NetClientHandler.java:1483)
+	at di.a(SourceFile:59)
+	at cg.b(TcpConnection.java:458)
+	at ayh.d(NetClientHandler.java:240)
+	at ayk.c(GuiConnecting.java:49)
+	at net.minecraft.client.Minecraft.l(Minecraft.java:1539)
+	at net.minecraft.client.Minecraft.J(Minecraft.java:848)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:773)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 608469208 bytes (580 MB) / 778043392 bytes (742 MB) up to 4772200448 bytes (4551 MB)
+	JVM Flags: 2 total; -Xmx5120m -XX:MaxPermSize=256m
+	AABB Pool Size: 10817 (605752 bytes; 0 MB) allocated, 10817 (605752 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v7.26a FML v4.7.35.556 Minecraft Forge 6.6.2.534 53 mods loaded, 53 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CodeChickenCore [CodeChicken Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	NotEnoughItems [Not Enough Items] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PowerCrystalsCore [PowerCrystals Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_bspkrsCore [bspkrsCore] ([1.4.7]bspkrsCorev1.02.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_ReiMinimap [mod_ReiMinimap] ([1.4.6]ReiMinimap_v3.2_06.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2 [IndustrialCraft 2] (industrialcraft-2_1.115.220-lf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedMachines [IC2 Advanced Machines Addon] (AdvancedMachines_1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedPowerManagement [Advanced Power Management] (AdvancedPowerManagement-1.1.55-IC2_1.112.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedSolarPanel [Advanced Solar Panels] (advancedsolarpanel.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Backpack [Backpack] (backpack-1.6.8-1.4.7.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Core [BuildCraft] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Builders [BC Builders] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Energy [BC Energy] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Factory [BC Factory] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Transport [BC Transport] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildCraft|Silicon [BC Silicon] (buildcraft-A-3.4.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Additional-Buildcraft-Objects [Additional Buildcraft Objects] (buildcraft-Z-additional-buildcraft-objects-1.0.2.108.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ValvePipe [Valve Pipe] (BuildCraft-Z-ValvePipeAM.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ComputerCraft [ComputerCraft] (ComputerCraft1.5.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CCCable [ComputerCraft Peripheral Cables] (cccable-1.4.1-universal.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CoFHCore [CoFH Core] (CoFHCore-1.4.7.3.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CCTurtle [ComputerCraft Turtles] (ComputerCraft1.5.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DamageIndicatorsMod [Damage Indicators] (Damage-Indicators-Mod-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FlansMod [Flan's Mod] (Flans Mod 2.1.1 for Minecraft 1.4.6 Universal.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forestry [Forestry for Minecraft] (forestry-A-2.0.0.11.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2NuclearControl [Nuclear Control] (IC2NuclearControl-1.4.6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ImmibisCore [Immibis Core] (immibis-core-52.4.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ImmibisPeripherals [Immibis's Peripherals] (immibis-peripherals-52.1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_InvTweaks [Inventory Tweaks] (InvTweaks-1.50-1.4.7.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IronChest [Iron Chest] (ironchest-universal-1.4.7-5.1.0.275.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	LiquidMetals [Liquid Metals] (LiquidMetals-0.1.16.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	LogisticsPipes|Main [Logistics Pipes] (LogisticsPipes-MC1.4.7-0.7.0.91.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	NEIPlugins [NEI Plugins] (nei_plugins-1.0.4.5a.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	OCS [OpenCCSensors] (OpenCCSensors-0.1.4b.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Railcraft [Railcraft] (Railcraft_1.4.7-6.17.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PowerConverters [Power Converters] (PowerConverters-2.2.2-29.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerCore [RedPower] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerBase [RP Base] (RedPowerCore-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerMachine [RP Machine] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerCompat [RP Compat] (RedPowerCompat-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerWiring [RP Wiring] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerLogic [RP Logic] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerLighting [RP Lighting] (RedPowerDigital-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerWorld [RP World] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	RedPowerControl [RP Control] (RedPowerMechanical-2.0pr6.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	StevesCarts [Steve's Carts] (StevesCarts.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TC [Traincraft] (traincraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|Core [WR-CBE Core] (WR-CBE Core 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|Addons [WR-CBE Addons] (WR-CBE Addons 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	WR-CBE|RedPower [WR-CBE RedPower] (WR-CBE RedPower 1.3.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available

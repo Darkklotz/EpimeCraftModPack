@@ -1,0 +1,30 @@
+Name M14 DMR
+ShortName m14dmr
+//The ammo this gun uses (shortName)
+Ammo m14mag
+Icon m14dmr
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27137
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 50
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 2
+//Damage in half hearts
+Damage 20
+//The higher this value, the more the bullets spread
+Accuracy 1
+//Time in ticks between rounds
+ShootDelay 3
+ShootSound M14Shoot
+ReloadSound mp40Reload
+Mode SemiAuto
+Scope usscope
+Deployable False
+DeployedModel None
+Recipe B mbarrel M mrecviver P pistolgrip S scope E pstock
+ S 
+BME
+ P 
+//Bullet speed, default 3.0
+BulletSpeed 40

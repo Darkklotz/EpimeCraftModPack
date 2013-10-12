@@ -1,0 +1,52 @@
+Name Avenger
+ShortName Avenger
+ItemID 3227
+Icon Avenger
+Model Avenger
+Texture Avenger
+MaxSpeed 5.0
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 4.5
+ShellDelay 100
+CargoSlots 2
+//Actually shell slots
+BombSlots 0
+Health 500
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns True
+AllowTurretGuns True
+TurnLeftSpeed 3
+TurnRightSpeed 3
+Acceleration 6
+Decceleration 5
+FuelTankSize 1000
+StartSound Engine
+StartSoundLength 20
+EngineSound Engine
+EngineSoundLength 20
+ShootSound bullet
+ShellSound shell
+Driver -9 4 -4
+Passengers 1
+Passenger 0 9 -5 -4 0
+
+GunYawMin -45
+GunYawMax 45
+GunPitchMin -45
+GunPitchMax 45
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -19 2 -33 //VL
+WheelPosition 1 -19 2 36 //HL
+WheelPosition 2 19 2 36 //HR
+WheelPosition 3 19 2 -33 //VR
+
+//Recipe
+FrontWheels wheel
+BackWheels wheel
+Tracks None
+Chassis HumveeChassis
+Turret None
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Yellow

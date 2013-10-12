@@ -1,0 +1,12 @@
+Name Ghillie Jacket
+ShortName gilliejacket
+ItemID 27237
+Icon Gilliebody
+Colour 255 255 255
+Type Body
+Defence 0.1
+ArmourTexture gillie
+Recipe G grass L leather
+G G
+LLL
+GLG

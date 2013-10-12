@@ -1,0 +1,54 @@
+Name Attack Outpost
+ShortName Radar
+ItemID 3230
+Icon Radar
+Model Radar2
+Texture Radar
+MaxSpeed 4.0
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 999
+ShellDelay 999
+CargoSlots 5
+//Actually shell slots
+BombSlots 0
+Health 500
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns False
+AllowTurretGuns False
+TurnLeftSpeed 2
+TurnRightSpeed 2
+Acceleration 5
+Decceleration 5
+FuelTankSize 1000
+StartSound lkw_start
+StartSoundLength 34
+EngineSound lkw_lauf
+EngineSoundLength 105
+ShootSound bullet
+ShellSound shell
+Driver -8 7 -17 //Pilots Position
+Passengers 2 //No of Passengers
+Passenger 0 -9 -2 18 0 //Passenger 1
+Passenger 1 8 -2 18 0 //Passenger 2
+
+
+GunYawMin -45
+GunYawMax 45
+GunPitchMin -45
+GunPitchMax 45
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -14 -4 -6 //Front Left
+WheelPosition 1 -14 -4 46 //Back Left
+WheelPosition 2 14 -4 46 //Back Right
+WheelPosition 3 14 -4 -6 //Front Right
+
+//Recipe
+FrontWheels wheel
+BackWheels wheel
+Tracks None
+Chassis TruckChassis
+Turret None
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Green

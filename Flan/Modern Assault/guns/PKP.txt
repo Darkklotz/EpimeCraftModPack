@@ -1,0 +1,30 @@
+Name PKP
+ShortName pkp
+//The ammo this gun uses (shortName)
+Ammo pkpbelt
+Icon pkp
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27195
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 100
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 2
+//Damage in half hearts
+Damage 10
+//The higher this value, the more the bullets spread
+Accuracy 2
+//Time in ticks between rounds
+ShootDelay 3
+ShootSound RPDShoot
+ReloadSound BrowningReload
+Mode FullAuto
+Scope None
+Deployable False
+DeployedModel None
+Recipe B hbarrel H hreciver S pstock P pistolgrip I iron
+I  
+BHS
+IP 
+//Bullet speed, default 3.0
+BulletSpeed 25

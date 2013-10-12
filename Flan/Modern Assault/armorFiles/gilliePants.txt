@@ -1,0 +1,13 @@
+Name Ghillie Pants
+ShortName gilliePants
+ItemID 27238
+Icon GillliePants
+Colour 255 255 255
+Type Pants
+Defence 0.1
+ArmourTexture gillie
+Recipe I iron
+III
+I  
+II 
+

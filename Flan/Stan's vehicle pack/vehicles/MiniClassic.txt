@@ -1,0 +1,52 @@
+Name Mini Cooper Classic
+ShortName MiniClassic
+ItemID 4001
+Icon IconMiniClassic
+Model MiniCooperC
+Texture MiniClassic
+MaxSpeed 4
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 999
+ShellDelay 999
+CargoSlots 1
+//Actually shell slots
+BombSlots 0
+Health 200
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns False
+AllowTurretGuns False
+TurnLeftSpeed 2
+TurnRightSpeed 2
+Acceleration 3.5
+Decceleration 5
+FuelTankSize 700
+StartSound Engine
+StartSoundLength 20
+EngineSound Engine
+EngineSoundLength 20
+ShootSound bullet
+ShellSound shell
+Driver -4 1 -4
+Passengers 3
+Passenger 0 10 -8 -4 0
+Passenger 1 -4 -8 15 0
+Passenger 2 10 -8 15 0
+GunYawMin -45
+GunYawMax 45
+GunPitchMin -45
+GunPitchMax 45
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -7 4 -16
+WheelPosition 1 -7 4 18 
+WheelPosition 2 15 4 18
+WheelPosition 3 15 4 -16  
+//Recipe
+FrontWheels wheel
+BackWheels wheel
+Tracks None
+Chassis SmallCarChassis
+Turret None
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Lime

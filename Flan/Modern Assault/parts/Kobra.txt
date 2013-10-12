@@ -1,0 +1,14 @@
+Name Kobra
+ShortName kobra
+Icon kobra
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27225
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 1
+RecipeOutput 1
+Recipe G glass P plastics
+G  
+G  
+PPP

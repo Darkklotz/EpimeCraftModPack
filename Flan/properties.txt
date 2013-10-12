@@ -1,0 +1,3 @@
+Explosions false
+Bombs True
+Bullets True

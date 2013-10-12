@@ -1,0 +1,14 @@
+Name Plastic Stock
+ShortName pstock
+Icon pstock
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27248
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 16
+RecipeOutput 1
+Recipe P plastics
+PPP
+ PP
+   

@@ -1,0 +1,13 @@
+Name Turbine
+ShortName Turbine
+Icon IconTurbine
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 29050
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Propeller
+StackSize 64
+Recipe S Steel M metalPropeller
+ S 
+SSS
+ S 

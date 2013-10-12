@@ -1,0 +1,14 @@
+Name PSO
+ShortName pso
+Icon pso
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27226
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 1
+RecipeOutput 1
+Recipe I iron G glass P plastics
+PIP
+GGG
+PIP

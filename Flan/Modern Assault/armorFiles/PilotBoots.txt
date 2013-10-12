@@ -1,0 +1,8 @@
+Name Fighter Pilot Boots
+ShortName pilotBoots
+ItemID 27235
+Icon PilotBoots
+Colour 255 255 255
+Type Boots
+Defence 0.1
+ArmourTexture Pilot

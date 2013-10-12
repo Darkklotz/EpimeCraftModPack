@@ -1,0 +1,14 @@
+Name Large Revolver
+ShortName hrevolver
+Icon hrevolver
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27254
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 16
+RecipeOutput 1
+Recipe P plastics I iron
+PIP
+I I
+PIP

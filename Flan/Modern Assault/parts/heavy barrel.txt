@@ -1,0 +1,14 @@
+Name Heavy Barrel
+ShortName hbarrel
+Icon hbarrel
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27243
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 16
+RecipeOutput 1
+Recipe I iron
+I  
+III
+   

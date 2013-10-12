@@ -1,0 +1,26 @@
+Name Flak 88mm Anti tank
+ShortName Flak88a
+Ammo Flak88Ammo2
+Icon IconFlak88a
+ItemID 28561
+Model Flak88a
+Texture SkinFlak88
+NumBarrels 1
+Barrel 0 88 40 0
+FireAlternately True
+ReloadTime 60
+Health 300
+Recoil 3
+Damage 30
+Accuracy 3
+ShootDelay 20
+ShootSound AAfire
+ReloadSound BARReload
+GunnerPos 5 29 -17
+TopViewLimit 80
+BottomViewLimit 0
+RecipeOutput 1
+Recipe B Misc_Steel_BarrelGun M Mat_Steel L Misc_SpecialSeat A Misc_Steel_PartsArmorplate
+  B
+LMA
+M M

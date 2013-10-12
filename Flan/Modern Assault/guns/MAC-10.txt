@@ -1,0 +1,30 @@
+Name MAC-10
+ShortName mac-10
+//The ammo this gun uses (shortName)
+Ammo mac-10mag
+Icon mac-10
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27158
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 30
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 2
+//Damage in half hearts
+Damage 5
+//The higher this value, the more the bullets spread
+Accuracy 6
+//Time in ticks between rounds
+ShootDelay 1
+ShootSound MiniUziShoot
+ReloadSound coltReload
+Mode FullAuto
+Scope aa12sight
+Deployable False
+DeployedModel None
+Recipe B libarrel S lireciver P pistolgrip I iron
+BS 
+ P 
+ I 
+//Bullet speed, default 3.0
+BulletSpeed 10

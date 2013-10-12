@@ -1,0 +1,27 @@
+Name Flak88 Anti Tank Ammo
+ShortName Flak88Ammo2
+Model Bullet
+Colour 255 255 255
+ItemID 28034
+Icon IconFlakShell1
+FallSpeed 1
+RoundsPerItem 2
+MaxStackSize 3
+Damage 50
+Explosion 3
+ExplodeOnImpact True
+Fuse 200
+FlakParticles 0
+Fire 0
+BreaksGlass True
+HitBoxSize 1.0
+HitSound bomb
+Penetrates False
+SmokeTrail True
+Bomb False
+Shell False
+RecipeOutput 3
+Recipe I iron G gunpowder
+ I 
+GGG
+III

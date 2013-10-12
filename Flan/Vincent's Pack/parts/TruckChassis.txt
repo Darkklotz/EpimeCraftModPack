@@ -1,0 +1,13 @@
+Name Truck Chassis
+ShortName TruckChassis
+Icon TruckChassis
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 24037
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Chassis
+StackSize 64
+Recipe I iron G glass
+   
+ II
+III

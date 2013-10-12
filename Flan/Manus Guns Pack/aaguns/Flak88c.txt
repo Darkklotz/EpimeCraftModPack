@@ -1,0 +1,26 @@
+Name Flak 88mm Anti tank with cover North South Facing
+ShortName Flak88c
+Ammo Flak88Ammo2
+Icon IconFlak88b
+ItemID 28563
+Model Flak88c
+Texture SkinFlak88
+NumBarrels 1
+Barrel 0 88 40 0
+FireAlternately True
+ReloadTime 60
+Health 300
+Recoil 3
+Damage 30
+Accuracy 3
+ShootDelay 20
+ShootSound AAfire
+ReloadSound BARReload
+GunnerPos 5 29 -17
+TopViewLimit 80
+BottomViewLimit 0
+RecipeOutput 1
+Recipe B Misc_Steel_BarrelGun M Mat_Steel L Misc_SpecialSeat A Misc_Steel_PartsArmorplate T Misc_SpecialTent
+BT 
+AML
+MMM

@@ -1,0 +1,62 @@
+Name ME 410
+ShortName ME410
+ItemID 4005
+Icon IconME410
+Model ME410
+Texture ME410
+MaxPropellerSpeed 4.3
+TakeOffSpeed 3
+CameraDistance 12
+//0 - Nose propeller, 1 - Inner Wing Propellers, 2 - Outer Wing Propellers, 3 - Inner and Outer Propellers
+PropSetup 1
+//Propeller number, x, y, z. Numbering starts at 0.
+PropellerPos 0 -24 -17 -37
+PropellerPos 1 -24 -17 37
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 5
+BombDelay 100
+CargoSlots 0
+BombSlots 4
+Health 1900
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+AllowWingGuns False
+AllowNoseGuns True
+//Next 3 are for large planes only
+AllowSideGuns False
+AllowTailGuns False
+AllowDorsalGun False
+//Add positions for the pilot controlled guns. That is, nose and wing guns.
+//AddGunPosition <type> <x> <y> <Z> where type is one of the corresponding numbers
+//0 : Left Nose, 1 : Right Nose, 2 : Left Wing, 3 : Right Wing
+AddGunPosition 0 -3 11 15
+AddGunPosition 1 1 11 15
+BombPosition 0 -30 0
+TurnLeftSpeed 1.7
+TurnRightSpeed 1.7
+RollLeftSpeed 2
+RollRightSpeed 2
+LookUpSpeed 1.8
+LookDownSpeed 1.8
+Acceleration 3
+Decceleration 3.2
+FuelTankSize 5500
+MaxHeight 256
+StartSound propStart
+StartSoundLength 20
+PropSound propSound
+PropSoundLength 30
+ShootSound PlaneShoot
+BombSound bomb
+Pilot 0 17 -5
+Passengers 1
+Passenger 0 0 8 -24
+//Recipe
+BigTable False
+Propeller metalPropeller
+Cockpit metalCockpit
+Wings metalWingSmall
+Bay bombBay
+Tail metalTail
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Lime

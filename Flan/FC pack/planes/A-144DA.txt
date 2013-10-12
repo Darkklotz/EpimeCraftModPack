@@ -1,0 +1,59 @@
+Name A-144 "Dark Angel"
+ShortName A144DA
+ItemID 29997
+Icon IconA144DA
+Model A144
+Texture SkinA144DA
+MaxPropellerSpeed 8
+TakeOffSpeed 0.1
+CameraDistance 15.0
+//0 - Nose propeller, 1 - Inner Wing Propellers, 2 - Outer Wing Propellers, 3 - Inner and Outer Propellers
+PropSetup 0
+//Propeller number, x, y, z. Numbering starts at 0.
+PropellerPos 0 0 0 54
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 7
+BombDelay 100
+CargoSlots 0
+BombSlots 3
+Health 1800
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+AllowWingGuns False
+AllowNoseGuns True
+//Next 3 are for large planes only
+AllowSideGuns False
+AllowTailGuns False
+AllowDorsalGun False
+//Add positions for the pilot controlled guns. That is, nose and wing guns.
+//AddGunPosition <type> <x> <y> <Z> where type is one of the corresponding numbers
+//0 : Left Nose, 1 : Right Nose, 2 : Left Wing, 3 : Right Wing
+AddGunPosition 2 10 0 10
+AddGunPosition 3 -20 0 10
+BombPosition 0 0 18
+TurnLeftSpeed 2
+TurnRightSpeed 2
+RollLeftSpeed 2
+RollRightSpeed 2
+LookUpSpeed 2
+LookDownSpeed 2
+Acceleration 5
+Decceleration 5
+FuelTankSize 6000
+MaxHeight 256
+StartSound viper
+StartSoundLength 20
+PropSound viper
+PropSoundLength 30
+ShootSound viperblaster
+BombSound bomb
+Pilot -9 6 -50
+Passengers 0
+//Recipe
+Propeller Thruster
+Cockpit metalCockpit
+Wings metalWingSmall
+Bay bombBay
+Tail metalTail
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Black

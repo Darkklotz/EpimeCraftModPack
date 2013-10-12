@@ -1,0 +1,48 @@
+Name Kart
+ShortName Kart9
+ItemID 4016
+Icon IconKart9
+Model Kart
+Texture Kart9
+MaxSpeed 7
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 999
+ShellDelay 999
+CargoSlots 0
+//Actually shell slots
+BombSlots 0
+Health 300
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns False
+AllowTurretGuns False
+TurnLeftSpeed 2
+TurnRightSpeed 2
+Acceleration 6
+Decceleration 7
+FuelTankSize 400
+StartSound Engine
+StartSoundLength 20
+EngineSound Engine
+EngineSoundLength 20
+ShootSound bullet
+ShellSound shell
+Driver 0 0 -3
+GunYawMin -45
+GunYawMax 45
+GunPitchMin -45
+GunPitchMax 45
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -11 4 -25 //Front Left
+WheelPosition 1 -11 4 7 //Back Left
+WheelPosition 2 11 4 7 //Back Right
+WheelPosition 3 11 4 -25 //Front Right
+//Recipe
+FrontWheels wheel
+BackWheels wheel
+Tracks None
+Chassis KartChassis
+Turret None
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes black

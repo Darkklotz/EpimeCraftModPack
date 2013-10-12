@@ -1,0 +1,8 @@
+Name Fighter Pilot Jacket
+ShortName pilotjacket
+ItemID 27233
+Icon PilotBody
+Colour 255 255 255
+Type Body
+Defence 0.1
+ArmourTexture Pilot

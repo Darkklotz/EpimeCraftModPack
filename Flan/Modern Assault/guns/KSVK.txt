@@ -1,0 +1,31 @@
+Name KSVK
+ShortName ksvk
+//The ammo this gun uses (shortName)
+Ammo ksvkmag
+Icon ksvk
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27202
+//Reload time in ticks, 1/20ths of a second
+ReloadTime 50
+//The amount of gun recoil, all relative : Sten = 1, Mp40 = 3, Kar98kSniper = 20
+Recoil 20
+//Damage in half hearts
+Damage 50
+//The higher this value, the more the bullets spread
+Accuracy 1
+//Time in ticks between rounds
+ShootDelay 7
+ShootSound BarrettShoot
+ReloadSound mp40Reload
+Mode SemiAuto
+Scope ruscope
+ZoomLevel 15
+Deployable False
+DeployedModel None
+Recipe B hbarrel H hreciver W wstock P pistolgrip S scope
+ S 
+BHW
+ P 
+//Bullet speed, default 3.0
+BulletSpeed 40

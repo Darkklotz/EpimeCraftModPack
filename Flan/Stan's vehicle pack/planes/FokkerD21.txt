@@ -1,0 +1,60 @@
+Name Fokker D21
+ShortName D21
+ItemID 4007
+Icon IconFokkerD21
+Model FokkerD21
+Texture FokkerD21
+MaxPropellerSpeed 4.3
+TakeOffSpeed 2.5
+CameraDistance 9
+//0 - Nose propeller, 1 - Inner Wing Propellers, 2 - Outer Wing Propellers, 3 - Inner and Outer Propellers
+PropSetup 0
+//Propeller number, x, y, z. Numbering starts at 0.
+PropellerPos 0 -24 -17 -37
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 5
+BombDelay 100
+CargoSlots 0
+BombSlots 1
+Health 1500
+CollisionBoxes 0
+//Whether or not guns can be placed in these slots
+AllowWingGuns True
+AllowNoseGuns False
+//Next 3 are for large planes only
+AllowSideGuns False
+AllowTailGuns False
+AllowDorsalGun False
+//Add positions for the pilot controlled guns. That is, nose and wing guns.
+//AddGunPosition <type> <x> <y> <Z> where type is one of the corresponding numbers
+//0 : Left Nose, 1 : Right Nose, 2 : Left Wing, 3 : Right Wing
+AddGunPosition 2 37 9 26
+AddGunPosition 3 -37 9 26
+BombPosition 0 -30 0
+TurnLeftSpeed 2
+TurnRightSpeed 2
+RollLeftSpeed 2.5
+RollRightSpeed 2.5
+LookUpSpeed 2.2
+LookDownSpeed 2.2
+Acceleration 3.5
+Decceleration 3.5
+FuelTankSize 5000
+MaxHeight 256
+StartSound propStart
+StartSoundLength 20
+PropSound propSound
+PropSoundLength 30
+ShootSound PlaneShoot
+BombSound bomb
+Pilot 0 12 -3
+Passengers 0
+//Recipe
+BigTable False
+Propeller metalPropeller
+Cockpit metalCockpit
+Wings metalWingSmall
+Bay bombBay
+Tail metalTail
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Brown

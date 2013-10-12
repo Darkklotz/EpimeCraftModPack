@@ -1,0 +1,12 @@
+Name Ghillie Hat
+ShortName gilliehat
+ItemID 27236
+Icon GillieHat
+Colour 255 255 255
+Type Helmet
+Defence 0.1
+ArmourTexture gillie
+Recipe G grass L leather
+GGG
+L L
+   

@@ -1,0 +1,14 @@
+Name GP-25 Launcher
+ShortName rul
+Icon gp-25launcher
+//Colour in Red, Green, Blue, each going up to 255.
+Colour 255 255 255
+ItemID 27220
+//Categories are Cockpit, Wing, Engine, Propeller, Bay, Tail, Wheel, Chassis, Turret, Fuel, Misc
+Category Misc
+StackSize 1
+RecipeOutput 1
+Recipe I iron P plastics
+II 
+  I
+IIP

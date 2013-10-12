@@ -1,0 +1,64 @@
+Name Strykan Tank Guard
+ShortName Leopard2A6
+ItemID 3221
+Icon IconLeopard2A6
+Model Leopard2A6
+Texture SkinLeopard2A6
+MaxSpeed 4.0
+//Delays are in ticks or 1/20ths of seconds
+ShootDelay 4.5
+ShellDelay 50
+CargoSlots 5
+//Actually shell slots
+BombSlots 5
+Health 4000
+CollisionBoxes 5
+AddCollisionBox 0 0 33 0 4
+AddCollisionBox 1 -20 0 63 0
+AddCollisionBox 2 19 0 63 0
+AddCollisionBox 3 19 2 -29 0
+AddCollisionBox 4 -20 2 -29 0
+//Whether or not guns can be placed in these slots
+//Body is for the driver, turret is for a designated gunner
+AllowBodyGuns True
+AllowTurretGuns False
+TurnLeftSpeed 1
+TurnRightSpeed 1
+Acceleration 1
+Decceleration 1
+FuelTankSize 2500
+StartSound lkw_start
+StartSoundLength 34
+EngineSound lkw_lauf
+EngineSoundLength 105
+ShootSound bullet
+ShellSound TankShell
+HasTurret True
+SquashMobs True
+Tank True
+Driver 0 25 0
+Passengers 0
+//For the passenger's gun
+GunYawMin -180
+GunYawMax 180
+GunPitchMin -45
+GunPitchMax 45
+//For the tank turret
+TurretYawMin -180
+TurretYawMax 180
+TurretPitchMin -5
+TurretPitchMax 40
+GunPosition 0 34 0
+//Wheel positions for collision handling. Tanks still have 4 wheels, they are just the corner ones.
+WheelPosition 0 -26 2 -46
+WheelPosition 1 -26 2 56
+WheelPosition 2 26 2 56
+WheelPosition 3 26 2 -46
+//Recipe
+FrontWheels None
+BackWheels None
+Tracks catTrack
+Chassis tankBody
+Turret tankTurret
+//Dyes are None, Black, Red, Green, Brown, Blue, Purple, Cyan, LGrey, Grey, Pink, Lime, Yellow, LBlue, Magenta, Orange, White
+Dyes Green

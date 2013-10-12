@@ -1,0 +1,12 @@
+Name Ghillie Boots
+ShortName gillieBoots
+ItemID 27239
+Icon GillieBoots
+Colour 255 255 255
+Type Boots
+Defence 0.1
+ArmourTexture gillie
+Recipe G glass P plastics
+GGG 
+G  
+PPP
